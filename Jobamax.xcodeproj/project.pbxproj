@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		A27DE0F6254E1D6C00286950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27DE0F5254E1D6C00286950 /* Assets.xcassets */; };
 		A27DE0F9254E1D6C00286950 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27DE0F8254E1D6C00286950 /* Preview Assets.xcassets */; };
 		A27DE0FC254E1D6C00286950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27DE0FA254E1D6C00286950 /* LaunchScreen.storyboard */; };
+		A27DE105254E1E8F00286950 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27DE104254E1E8F00286950 /* GoogleService-Info.plist */; };
+		D72789FDBB82A3EA38E9F6D9 /* Pods_Jobamax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CF8DAACD812A524C37AD9D /* Pods_Jobamax.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C11FC72F12994E51795617 /* Pods-Jobamax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobamax.release.xcconfig"; path = "Target Support Files/Pods-Jobamax/Pods-Jobamax.release.xcconfig"; sourceTree = "<group>"; };
+		746A8A01688F89C75E67FC05 /* Pods-Jobamax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobamax.debug.xcconfig"; path = "Target Support Files/Pods-Jobamax/Pods-Jobamax.debug.xcconfig"; sourceTree = "<group>"; };
+		81CF8DAACD812A524C37AD9D /* Pods_Jobamax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jobamax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27DE0EC254E1D6700286950 /* Jobamax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobamax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27DE0EF254E1D6700286950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27DE0F1254E1D6700286950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		A27DE0F8254E1D6C00286950 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A27DE0FB254E1D6C00286950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27DE0FD254E1D6C00286950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27DE104254E1E8F00286950 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Jobamax/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72789FDBB82A3EA38E9F6D9 /* Pods_Jobamax.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FF0229764AA4D6B78031678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81CF8DAACD812A524C37AD9D /* Pods_Jobamax.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E14384A4991161571B61A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				746A8A01688F89C75E67FC05 /* Pods-Jobamax.debug.xcconfig */,
+				02C11FC72F12994E51795617 /* Pods-Jobamax.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A2111E63254E2A620089E0E0 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				A27DE104254E1E8F00286950 /* GoogleService-Info.plist */,
+				A27DE0EF254E1D6700286950 /* AppDelegate.swift */,
+				A27DE0F1254E1D6700286950 /* SceneDelegate.swift */,
+				A27DE0F5254E1D6C00286950 /* Assets.xcassets */,
+				A27DE0FA254E1D6C00286950 /* LaunchScreen.storyboard */,
+				A27DE0FD254E1D6C00286950 /* Info.plist */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		A2111E64254E2A750089E0E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A27DE0F3254E1D6700286950 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2111E65254E2A7C0089E0E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A27DE0E3254E1D6700286950 = {
 			isa = PBXGroup;
 			children = (
 				A27DE0EE254E1D6700286950 /* Jobamax */,
 				A27DE0ED254E1D6700286950 /* Products */,
+				8E14384A4991161571B61A69 /* Pods */,
+				6FF0229764AA4D6B78031678 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +110,9 @@
 		A27DE0EE254E1D6700286950 /* Jobamax */ = {
 			isa = PBXGroup;
 			children = (
-				A27DE0EF254E1D6700286950 /* AppDelegate.swift */,
-				A27DE0F1254E1D6700286950 /* SceneDelegate.swift */,
-				A27DE0F3254E1D6700286950 /* ContentView.swift */,
-				A27DE0F5254E1D6C00286950 /* Assets.xcassets */,
-				A27DE0FA254E1D6C00286950 /* LaunchScreen.storyboard */,
-				A27DE0FD254E1D6C00286950 /* Info.plist */,
+				A2111E65254E2A7C0089E0E0 /* Model */,
+				A2111E64254E2A750089E0E0 /* View */,
+				A2111E63254E2A620089E0E0 /* Default */,
 				A27DE0F7254E1D6C00286950 /* Preview Content */,
 			);
 			path = Jobamax;
@@ -82,9 +133,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27DE100254E1D6C00286950 /* Build configuration list for PBXNativeTarget "Jobamax" */;
 			buildPhases = (
+				BAD1FE3EC3A34880B40D5338 /* [CP] Check Pods Manifest.lock */,
 				A27DE0E8254E1D6700286950 /* Sources */,
 				A27DE0E9254E1D6700286950 /* Frameworks */,
 				A27DE0EA254E1D6700286950 /* Resources */,
+				5C1B2C9E592E85494DDCF330 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +186,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				A27DE0FC254E1D6C00286950 /* LaunchScreen.storyboard in Resources */,
+				A27DE105254E1E8F00286950 /* GoogleService-Info.plist in Resources */,
 				A27DE0F9254E1D6C00286950 /* Preview Assets.xcassets in Resources */,
 				A27DE0F6254E1D6C00286950 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5C1B2C9E592E85494DDCF330 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jobamax/Pods-Jobamax-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jobamax/Pods-Jobamax-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jobamax/Pods-Jobamax-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAD1FE3EC3A34880B40D5338 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jobamax-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A27DE0E8254E1D6700286950 /* Sources */ = {
@@ -283,6 +379,7 @@
 		};
 		A27DE101254E1D6C00286950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 746A8A01688F89C75E67FC05 /* Pods-Jobamax.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +401,7 @@
 		};
 		A27DE102254E1D6C00286950 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C11FC72F12994E51795617 /* Pods-Jobamax.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
