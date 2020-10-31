@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2111E67254E2BE50089E0E0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2111E66254E2BE50089E0E0 /* Colors.xcassets */; };
+		A2111E6B254E2C7F0089E0E0 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */; };
 		A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0EF254E1D6700286950 /* AppDelegate.swift */; };
 		A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F1254E1D6700286950 /* SceneDelegate.swift */; };
 		A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F3254E1D6700286950 /* ContentView.swift */; };
@@ -21,6 +23,8 @@
 		02C11FC72F12994E51795617 /* Pods-Jobamax.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobamax.release.xcconfig"; path = "Target Support Files/Pods-Jobamax/Pods-Jobamax.release.xcconfig"; sourceTree = "<group>"; };
 		746A8A01688F89C75E67FC05 /* Pods-Jobamax.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jobamax.debug.xcconfig"; path = "Target Support Files/Pods-Jobamax/Pods-Jobamax.debug.xcconfig"; sourceTree = "<group>"; };
 		81CF8DAACD812A524C37AD9D /* Pods_Jobamax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jobamax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2111E66254E2BE50089E0E0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		A27DE0EC254E1D6700286950 /* Jobamax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobamax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27DE0EF254E1D6700286950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27DE0F1254E1D6700286950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 				A27DE0F5254E1D6C00286950 /* Assets.xcassets */,
 				A27DE0FA254E1D6C00286950 /* LaunchScreen.storyboard */,
 				A27DE0FD254E1D6C00286950 /* Info.plist */,
+				A2111E66254E2BE50089E0E0 /* Colors.xcassets */,
 			);
 			name = Default;
 			sourceTree = "<group>";
@@ -87,6 +92,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A2111E69254E2C640089E0E0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A27DE0E3254E1D6700286950 = {
@@ -110,6 +123,7 @@
 		A27DE0EE254E1D6700286950 /* Jobamax */ = {
 			isa = PBXGroup;
 			children = (
+				A2111E69254E2C640089E0E0 /* Extension */,
 				A2111E65254E2A7C0089E0E0 /* Model */,
 				A2111E64254E2A750089E0E0 /* View */,
 				A2111E63254E2A620089E0E0 /* Default */,
@@ -185,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2111E67254E2BE50089E0E0 /* Colors.xcassets in Resources */,
 				A27DE0FC254E1D6C00286950 /* LaunchScreen.storyboard in Resources */,
 				A27DE105254E1E8F00286950 /* GoogleService-Info.plist in Resources */,
 				A27DE0F9254E1D6C00286950 /* Preview Assets.xcassets in Resources */,
@@ -244,6 +259,7 @@
 				A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */,
 				A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */,
 				A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */,
+				A2111E6B254E2C7F0089E0E0 /* Color+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
