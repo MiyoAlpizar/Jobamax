@@ -82,6 +82,7 @@ extension SignUpView {
             switch result {
             case .success(let uid):
                 print(uid)
+                self.presentationMode.wrappedValue.dismiss()
             case .failure(let error):
                 alert(title: "Error trying to signup", message: error.localizedDescription)
             }
