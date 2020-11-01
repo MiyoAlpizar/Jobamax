@@ -13,7 +13,9 @@
 		A2111E73254E31A30089E0E0 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E72254E31A30089E0E0 /* Font+Extensions.swift */; };
 		A2111E76254E331E0089E0E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2111E75254E331E0089E0E0 /* Images.xcassets */; };
 		A2111E79254E33B40089E0E0 /* Screen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */; };
-		A2111E7D254E366F0089E0E0 /* RoundedImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E7C254E366F0089E0E0 /* RoundedImageButton.swift */; };
+		A2111E7D254E366F0089E0E0 /* Button+Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E7C254E366F0089E0E0 /* Button+Styles.swift */; };
+		A2111E84254E38AE0089E0E0 /* RoundedImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E83254E38AE0089E0E0 /* RoundedImageButton.swift */; };
+		A2111E88254E3D440089E0E0 /* AccentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E87254E3D440089E0E0 /* AccentButton.swift */; };
 		A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0EF254E1D6700286950 /* AppDelegate.swift */; };
 		A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F1254E1D6700286950 /* SceneDelegate.swift */; };
 		A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F3254E1D6700286950 /* ContentView.swift */; };
@@ -34,7 +36,9 @@
 		A2111E72254E31A30089E0E0 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
 		A2111E75254E331E0089E0E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+Extensions.swift"; sourceTree = "<group>"; };
-		A2111E7C254E366F0089E0E0 /* RoundedImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageButton.swift; sourceTree = "<group>"; };
+		A2111E7C254E366F0089E0E0 /* Button+Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button+Styles.swift"; sourceTree = "<group>"; };
+		A2111E83254E38AE0089E0E0 /* RoundedImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageButton.swift; sourceTree = "<group>"; };
+		A2111E87254E3D440089E0E0 /* AccentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentButton.swift; sourceTree = "<group>"; };
 		A27DE0EC254E1D6700286950 /* Jobamax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobamax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27DE0EF254E1D6700286950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27DE0F1254E1D6700286950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,10 +120,19 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		A2111E7B254E36500089E0E0 /* Components */ = {
+		A2111E7B254E36500089E0E0 /* Styles */ = {
 			isa = PBXGroup;
 			children = (
-				A2111E7C254E366F0089E0E0 /* RoundedImageButton.swift */,
+				A2111E7C254E366F0089E0E0 /* Button+Styles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A2111E82254E387D0089E0E0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A2111E83254E38AE0089E0E0 /* RoundedImageButton.swift */,
+				A2111E87254E3D440089E0E0 /* AccentButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -145,7 +158,8 @@
 		A27DE0EE254E1D6700286950 /* Jobamax */ = {
 			isa = PBXGroup;
 			children = (
-				A2111E7B254E36500089E0E0 /* Components */,
+				A2111E82254E387D0089E0E0 /* Components */,
+				A2111E7B254E36500089E0E0 /* Styles */,
 				A2111E69254E2C640089E0E0 /* Extension */,
 				A2111E65254E2A7C0089E0E0 /* Model */,
 				A2111E64254E2A750089E0E0 /* View */,
@@ -281,9 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2111E73254E31A30089E0E0 /* Font+Extensions.swift in Sources */,
+				A2111E84254E38AE0089E0E0 /* RoundedImageButton.swift in Sources */,
 				A2111E6F254E2D590089E0E0 /* WelcomeView.swift in Sources */,
 				A2111E79254E33B40089E0E0 /* Screen+Extensions.swift in Sources */,
-				A2111E7D254E366F0089E0E0 /* RoundedImageButton.swift in Sources */,
+				A2111E7D254E366F0089E0E0 /* Button+Styles.swift in Sources */,
+				A2111E88254E3D440089E0E0 /* AccentButton.swift in Sources */,
 				A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */,
 				A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */,
 				A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */,
