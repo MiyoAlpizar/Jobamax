@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Color {
-    static let Accent = Color.init("Accent")
-    static let AccentDark = Color.init("AccentDark")
-    static let AccentLight = Color.init("AccentLight")
+    static let accent = Color.init("Accent")
+    static let accentDark = Color.init("AccentDark")
+    static let accentLight = Color.init("AccentLight")
 }

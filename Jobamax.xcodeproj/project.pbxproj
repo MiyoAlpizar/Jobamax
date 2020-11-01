@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		A2111E67254E2BE50089E0E0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2111E66254E2BE50089E0E0 /* Colors.xcassets */; };
 		A2111E6B254E2C7F0089E0E0 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */; };
+		A2111E6F254E2D590089E0E0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E6E254E2D590089E0E0 /* WelcomeView.swift */; };
+		A2111E73254E31A30089E0E0 /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E72254E31A30089E0E0 /* Font+Extensions.swift */; };
+		A2111E76254E331E0089E0E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2111E75254E331E0089E0E0 /* Images.xcassets */; };
+		A2111E79254E33B40089E0E0 /* Screen+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */; };
+		A2111E7D254E366F0089E0E0 /* RoundedImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2111E7C254E366F0089E0E0 /* RoundedImageButton.swift */; };
 		A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0EF254E1D6700286950 /* AppDelegate.swift */; };
 		A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F1254E1D6700286950 /* SceneDelegate.swift */; };
 		A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F3254E1D6700286950 /* ContentView.swift */; };
@@ -25,6 +30,11 @@
 		81CF8DAACD812A524C37AD9D /* Pods_Jobamax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jobamax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2111E66254E2BE50089E0E0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		A2111E6E254E2D590089E0E0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A2111E72254E31A30089E0E0 /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		A2111E75254E331E0089E0E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+Extensions.swift"; sourceTree = "<group>"; };
+		A2111E7C254E366F0089E0E0 /* RoundedImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageButton.swift; sourceTree = "<group>"; };
 		A27DE0EC254E1D6700286950 /* Jobamax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobamax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27DE0EF254E1D6700286950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27DE0F1254E1D6700286950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +85,7 @@
 				A27DE0FA254E1D6C00286950 /* LaunchScreen.storyboard */,
 				A27DE0FD254E1D6C00286950 /* Info.plist */,
 				A2111E66254E2BE50089E0E0 /* Colors.xcassets */,
+				A2111E75254E331E0089E0E0 /* Images.xcassets */,
 			);
 			name = Default;
 			sourceTree = "<group>";
@@ -83,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				A27DE0F3254E1D6700286950 /* ContentView.swift */,
+				A2111E6E254E2D590089E0E0 /* WelcomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -98,8 +110,18 @@
 			isa = PBXGroup;
 			children = (
 				A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */,
+				A2111E72254E31A30089E0E0 /* Font+Extensions.swift */,
+				A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A2111E7B254E36500089E0E0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A2111E7C254E366F0089E0E0 /* RoundedImageButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		A27DE0E3254E1D6700286950 = {
@@ -123,6 +145,7 @@
 		A27DE0EE254E1D6700286950 /* Jobamax */ = {
 			isa = PBXGroup;
 			children = (
+				A2111E7B254E36500089E0E0 /* Components */,
 				A2111E69254E2C640089E0E0 /* Extension */,
 				A2111E65254E2A7C0089E0E0 /* Model */,
 				A2111E64254E2A750089E0E0 /* View */,
@@ -202,6 +225,7 @@
 				A2111E67254E2BE50089E0E0 /* Colors.xcassets in Resources */,
 				A27DE0FC254E1D6C00286950 /* LaunchScreen.storyboard in Resources */,
 				A27DE105254E1E8F00286950 /* GoogleService-Info.plist in Resources */,
+				A2111E76254E331E0089E0E0 /* Images.xcassets in Resources */,
 				A27DE0F9254E1D6C00286950 /* Preview Assets.xcassets in Resources */,
 				A27DE0F6254E1D6C00286950 /* Assets.xcassets in Resources */,
 			);
@@ -256,6 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2111E73254E31A30089E0E0 /* Font+Extensions.swift in Sources */,
+				A2111E6F254E2D590089E0E0 /* WelcomeView.swift in Sources */,
+				A2111E79254E33B40089E0E0 /* Screen+Extensions.swift in Sources */,
+				A2111E7D254E366F0089E0E0 /* RoundedImageButton.swift in Sources */,
 				A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */,
 				A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */,
 				A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */,
@@ -401,7 +429,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Jobamax/Preview Content\"";
-				DEVELOPMENT_TEAM = 6T32YU9C2P;
+				DEVELOPMENT_TEAM = 73V22638MH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Jobamax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,7 +451,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Jobamax/Preview Content\"";
-				DEVELOPMENT_TEAM = 6T32YU9C2P;
+				DEVELOPMENT_TEAM = 73V22638MH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Jobamax/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
