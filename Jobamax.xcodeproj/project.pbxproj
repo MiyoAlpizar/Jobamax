@@ -21,6 +21,8 @@
 		A23DCAB0254F13830057882C /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCAAF254F13830057882C /* LogoView.swift */; };
 		A23DCAB4254F1A350057882C /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCAB3254F1A350057882C /* ActivityIndicatorView.swift */; };
 		A23DCAB8254F1D260057882C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCAB7254F1D260057882C /* LoadingView.swift */; };
+		A23DCABC254F2A790057882C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCABB254F2A790057882C /* AuthService.swift */; };
+		A23DCADB254F333D0057882C /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23DCADA254F333D0057882C /* String+Extensions.swift */; };
 		A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0EF254E1D6700286950 /* AppDelegate.swift */; };
 		A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F1254E1D6700286950 /* SceneDelegate.swift */; };
 		A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27DE0F3254E1D6700286950 /* ContentView.swift */; };
@@ -49,6 +51,8 @@
 		A23DCAAF254F13830057882C /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		A23DCAB3254F1A350057882C /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		A23DCAB7254F1D260057882C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		A23DCABB254F2A790057882C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A23DCADA254F333D0057882C /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		A27DE0EC254E1D6700286950 /* Jobamax.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jobamax.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27DE0EF254E1D6700286950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27DE0F1254E1D6700286950 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				A2111E6A254E2C7F0089E0E0 /* Color+Extensions.swift */,
 				A2111E72254E31A30089E0E0 /* Font+Extensions.swift */,
 				A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */,
+				A23DCADA254F333D0057882C /* String+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -163,8 +168,16 @@
 		A23DCABA254F2A200057882C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				A23DCABB254F2A790057882C /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A23DCABF254F2D400057882C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A27DE0E3254E1D6700286950 = {
@@ -193,6 +206,7 @@
 				A23DCABA254F2A200057882C /* Services */,
 				A2111E69254E2C640089E0E0 /* Extension */,
 				A2111E65254E2A7C0089E0E0 /* Model */,
+				A23DCABF254F2D400057882C /* ViewModel */,
 				A2111E64254E2A750089E0E0 /* View */,
 				A2111E63254E2A620089E0E0 /* Default */,
 				A27DE0F7254E1D6C00286950 /* Preview Content */,
@@ -337,9 +351,11 @@
 				A23DCAAD254F0C920057882C /* RoundedIconTextField.swift in Sources */,
 				A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */,
 				A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */,
+				A23DCADB254F333D0057882C /* String+Extensions.swift in Sources */,
 				A23DCAB0254F13830057882C /* LogoView.swift in Sources */,
 				A2111E6B254E2C7F0089E0E0 /* Color+Extensions.swift in Sources */,
 				A23DCAB4254F1A350057882C /* ActivityIndicatorView.swift in Sources */,
+				A23DCABC254F2A790057882C /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
