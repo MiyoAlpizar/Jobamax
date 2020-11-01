@@ -10,19 +10,17 @@ import SwiftUI
 struct WelcomeView: View {
     
     @State private var showingAlert = false
+    @State private var isSignUpPresented = false
     
     var body: some View {
         VStack {
-            Text("Jobamax")
-                .font(.largeTitle)
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .foregroundColor(Color.accent)
+            LogoView()
                 .padding(.top, 40)
             
             Spacer()
             
             RoundedImageButton(image: "facebook", title: "LOG IN WITH FACEBOOK") {
-                self.showingAlert = true
+                
             }
             
             RoundedImageButton(image: "linkedin", title: "LOG IN WITH LINKEDIN") {
@@ -34,24 +32,28 @@ struct WelcomeView: View {
             }
             Text("OR")
                 .padding(.vertical, 40)
+            
             AccentButton(title: "SIGN UP") {
-                
+                self.isSignUpPresented = true
             }
+            
             Spacer()
             HStack {
                 Text("Already have an account?")
                 Button(action: {}, label: {
                     Text("Login")
-                        .font(.title3)
+                        .font(.headline)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 })
             }.padding(.bottom, 35)
         }.frame(width: UIScreen.main.bounds.width)
         .alert(isPresented:$showingAlert) {
-                    Alert(title: Text("Are you sure you want to delete this?"), message: Text("There is no undo"), primaryButton: .destructive(Text("Delete")) {
-                            print("Deleting...")
-                    }, secondaryButton: .cancel())
-                }
+            Alert(title: Text("Are you sure you want to delete this?"), message: Text("There is no undo"), primaryButton: .destructive(Text("Delete")) {
+                print("Deleting...")
+            }, secondaryButton: .cancel())
+        }.fullScreenCover(isPresented: $isSignUpPresented, content: {
+            SignUpView()
+        })
     }
 }
 

@@ -15,7 +15,7 @@ struct AccentButton: View {
     let gradient = LinearGradient(gradient: Gradient(colors: [Color.accentDark, Color.accentLight]), startPoint: .leading, endPoint: .trailing)
     
     var body: some View {
-        Button(action: {}, label: {
+        Button(action: action, label: {
             Text(title)
                 .foregroundColor(.white)
         }).padding()
