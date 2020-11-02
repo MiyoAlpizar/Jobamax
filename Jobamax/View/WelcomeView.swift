@@ -7,10 +7,17 @@
 
 import SwiftUI
 
+enum FullScreenType {
+    case login
+    case signup
+}
+
 struct WelcomeView: View {
+    @EnvironmentObject var session: SessionStore
     
     @State private var showingAlert = false
-    @State private var isSignUpPresented = false
+    @State private var isFullScreenPresented = false
+    @State private var fullScreenType: FullScreenType = .login
     
     var body: some View {
         VStack {
@@ -19,40 +26,41 @@ struct WelcomeView: View {
             
             Spacer()
             
-            RoundedImageButton(image: "facebook", title: "LOG IN WITH FACEBOOK") {
-                
-            }
+            RoundedImageButton(image: "facebook", title: "LOG IN WITH FACEBOOK") {}
+            RoundedImageButton(image: "linkedin", title: "LOG IN WITH LINKEDIN") {}
+            RoundedImageButton(image: "mail", title: "LOG IN WITH GMAIL") {}
             
-            RoundedImageButton(image: "linkedin", title: "LOG IN WITH LINKEDIN") {
-                
-            }
-            
-            RoundedImageButton(image: "mail", title: "LOG IN WITH GMAIL") {
-                
-            }
-            Text("OR")
-                .padding(.vertical, 40)
+            Text("OR").padding(.vertical, 40)
             
             AccentButton(title: "SIGN UP") {
-                self.isSignUpPresented = true
+                fullScreenType = .signup
+                isFullScreenPresented = true
             }
             
             Spacer()
+            
             HStack {
                 Text("Already have an account?")
-                Button(action: {}, label: {
+                
+                Button(action: {
+                    fullScreenType = .login
+                    isFullScreenPresented = true
+                }, label: {
                     Text("Login")
                         .font(.headline)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 })
+                
             }.padding(.bottom, 35)
-        }.frame(width: UIScreen.main.bounds.width)
-        .alert(isPresented:$showingAlert) {
-            Alert(title: Text("Are you sure you want to delete this?"), message: Text("There is no undo"), primaryButton: .destructive(Text("Delete")) {
-                print("Deleting...")
-            }, secondaryButton: .cancel())
-        }.fullScreenCover(isPresented: $isSignUpPresented, content: {
-            SignUpView()
+        }
+        .frame(minWidth: 0, maxWidth: .infinity)
+        .fullScreenCover(isPresented: $isFullScreenPresented, content: {
+            switch fullScreenType {
+            case .login:
+                LoginView().environmentObject(session)
+            case .signup:
+                SignUpView().environmentObject(session)
+            }
         })
     }
 }

@@ -30,6 +30,10 @@
 		A27DE0F9254E1D6C00286950 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27DE0F8254E1D6C00286950 /* Preview Assets.xcassets */; };
 		A27DE0FC254E1D6C00286950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27DE0FA254E1D6C00286950 /* LaunchScreen.storyboard */; };
 		A27DE105254E1E8F00286950 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A27DE104254E1E8F00286950 /* GoogleService-Info.plist */; };
+		A29C8CE5254F77B600F30405 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C8CE4254F77B600F30405 /* SessionStore.swift */; };
+		A29C8CEA254F782900F30405 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C8CE9254F782900F30405 /* User.swift */; };
+		A29C8CEE254F888600F30405 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C8CED254F888600F30405 /* UIApplication+Extensions.swift */; };
+		A29C8CF1254FC77500F30405 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A29C8CF0254FC77500F30405 /* LoginView.swift */; };
 		D72789FDBB82A3EA38E9F6D9 /* Pods_Jobamax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81CF8DAACD812A524C37AD9D /* Pods_Jobamax.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +66,10 @@
 		A27DE0FB254E1D6C00286950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27DE0FD254E1D6C00286950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27DE104254E1E8F00286950 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Jobamax/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A29C8CE4254F77B600F30405 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		A29C8CE9254F782900F30405 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A29C8CED254F888600F30405 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		A29C8CF0254FC77500F30405 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,7 @@
 				A27DE0F3254E1D6700286950 /* ContentView.swift */,
 				A2111E6E254E2D590089E0E0 /* WelcomeView.swift */,
 				A2111E8A254E50A30089E0E0 /* SignUpView.swift */,
+				A29C8CF0254FC77500F30405 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +131,7 @@
 		A2111E65254E2A7C0089E0E0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A29C8CE9254F782900F30405 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +143,7 @@
 				A2111E72254E31A30089E0E0 /* Font+Extensions.swift */,
 				A2111E78254E33B40089E0E0 /* Screen+Extensions.swift */,
 				A23DCADA254F333D0057882C /* String+Extensions.swift */,
+				A29C8CED254F888600F30405 /* UIApplication+Extensions.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 		A27DE0EE254E1D6700286950 /* Jobamax */ = {
 			isa = PBXGroup;
 			children = (
+				A29C8CE3254F77A400F30405 /* Stores */,
 				A2111E82254E387D0089E0E0 /* Components */,
 				A2111E7B254E36500089E0E0 /* Styles */,
 				A23DCABA254F2A200057882C /* Services */,
@@ -222,6 +234,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A29C8CE3254F77A400F30405 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				A29C8CE4254F77B600F30405 /* SessionStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,6 +260,8 @@
 			dependencies = (
 			);
 			name = Jobamax;
+			packageProductDependencies = (
+			);
 			productName = Jobamax;
 			productReference = A27DE0EC254E1D6700286950 /* Jobamax.app */;
 			productType = "com.apple.product-type.application";
@@ -267,6 +289,8 @@
 				Base,
 			);
 			mainGroup = A27DE0E3254E1D6700286950;
+			packageReferences = (
+			);
 			productRefGroup = A27DE0ED254E1D6700286950 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,16 +370,20 @@
 				A2111E7D254E366F0089E0E0 /* Button+Styles.swift in Sources */,
 				A2111E8B254E50A30089E0E0 /* SignUpView.swift in Sources */,
 				A2111E88254E3D440089E0E0 /* AccentButton.swift in Sources */,
+				A29C8CE5254F77B600F30405 /* SessionStore.swift in Sources */,
 				A27DE0F0254E1D6700286950 /* AppDelegate.swift in Sources */,
 				A23DCAB8254F1D260057882C /* LoadingView.swift in Sources */,
+				A29C8CEE254F888600F30405 /* UIApplication+Extensions.swift in Sources */,
 				A23DCAAD254F0C920057882C /* RoundedIconTextField.swift in Sources */,
 				A27DE0F2254E1D6700286950 /* SceneDelegate.swift in Sources */,
 				A27DE0F4254E1D6700286950 /* ContentView.swift in Sources */,
 				A23DCADB254F333D0057882C /* String+Extensions.swift in Sources */,
+				A29C8CF1254FC77500F30405 /* LoginView.swift in Sources */,
 				A23DCAB0254F13830057882C /* LogoView.swift in Sources */,
 				A2111E6B254E2C7F0089E0E0 /* Color+Extensions.swift in Sources */,
 				A23DCAB4254F1A350057882C /* ActivityIndicatorView.swift in Sources */,
 				A23DCABC254F2A790057882C /* AuthService.swift in Sources */,
+				A29C8CEA254F782900F30405 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

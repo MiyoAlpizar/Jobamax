@@ -12,4 +12,5 @@ extension Color {
     static let accentDark = Color.init("AccentDark")
     static let accentLight = Color.init("AccentLight")
     static let bgContrast = Color.init("BackgroundContrast")
+    static let primaryText = Color.init("PrimaryText")
 }

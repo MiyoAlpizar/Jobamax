@@ -20,18 +20,17 @@ struct RoundedImageButton: View {
                 Image(image)
                     .resizable()
                     .frame(width: 24, height: 24, alignment: .center)
-                    
                 Spacer()
                 Text(title)
-                    .foregroundColor(.black)
                     .font(.body)
+                    .foregroundColor(.primaryText)
                 Spacer()
             }
         }).padding()
         .frame(width: buttonWidth,height: self.buttonHeight)
         .overlay(
             RoundedRectangle(cornerRadius: 22)
-                .stroke(Color.black.opacity(0.4), lineWidth: 1))
+                .stroke(Color.bgContrast, lineWidth: 1))
     }
 }
 

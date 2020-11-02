@@ -10,17 +10,19 @@ import SwiftUI
 struct AccentButton: View {
     let title: String
     var action: () -> Void = { }
-    let buttonHeight: CGFloat = 44
-    let buttonWidth: CGFloat = UIScreen.width - 40
+    
     let gradient = LinearGradient(gradient: Gradient(colors: [Color.accentDark, Color.accentLight]), startPoint: .leading, endPoint: .trailing)
     
     var body: some View {
         Button(action: action, label: {
             Text(title)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .frame(height: 50)
                 .foregroundColor(.white)
+                .background(gradient)
+                .cornerRadius(25)
         }).padding()
-        .frame(width: buttonWidth,height: self.buttonHeight)
-        .background(Capsule().fill(gradient))
+        
     }
 }
 

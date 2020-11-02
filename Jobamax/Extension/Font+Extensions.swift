@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Font {
-    
+    /*
     /// Create a font with the large title text style.
     public static var largeTitle: Font {
         return Font.custom("OpenSans-Regular", size: UIFont.preferredFont(forTextStyle: .largeTitle).pointSize)
@@ -63,4 +63,5 @@ extension Font {
         }
         return Font.custom(font, size: size)
     }
+ */
 }

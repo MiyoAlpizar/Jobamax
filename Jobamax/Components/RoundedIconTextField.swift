@@ -10,7 +10,6 @@ import SwiftUI
 struct RoundedIconTextField<TextFieldView>: View where TextFieldView: View {
     @Binding var text: String
     let textField: TextFieldView
-    let placeholder: String
     var imageName: String? = nil
     
     private var isTextFieldWithIcon: Bool {
@@ -39,24 +38,15 @@ extension RoundedIconTextField {
     private var underlineTextFieldView: some View {
         VStack {
             ZStack(alignment: .leading) {
-                if text.isEmpty {
-                    placeholderView
-                }
-                
                 textField
                     .padding(.trailing, 16)
                     .padding(.leading, isTextFieldWithIcon ? 0 : 16)
             }
-            
             underlineView
         }
     }
     
-    private var placeholderView: some View {
-        Text(placeholder)
-            .padding(.leading, isTextFieldWithIcon ? 0 : 16)
-            .opacity(0.5)
-    }
+   
     
     private var underlineView: some View {
         Rectangle().frame(height: 1)
@@ -68,6 +58,6 @@ extension RoundedIconTextField {
 
 struct RoundedIconTextField_Previews: PreviewProvider {
     static var previews: some View {
-        RoundedIconTextField(text: .constant("E-mail"), textField: TextField("E-mail", text: .constant("miyo.naval@gmail.com")), placeholder: "E-mail", imageName: "envelope")
+        RoundedIconTextField(text: .constant("E-mail"), textField: TextField("E-mail", text: .constant("miyo.naval@gmail.com")), imageName: "envelope")
     }
 }
