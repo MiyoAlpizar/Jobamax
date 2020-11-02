@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '13.0'
+ platform :ios, '12.0'
 
 target 'Jobamax' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -7,7 +7,11 @@ target 'Jobamax' do
   inhibit_all_warnings!
 
   # Pods for Jobamax
-  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  
+  # Optionally, include the Swift extensions if you're using Swift.
+  pod 'FirebaseFirestoreSwift'
+  
 end
