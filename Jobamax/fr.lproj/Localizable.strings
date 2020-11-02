@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  Jobamax
+
+  Created by Miyo Alpízar on 02/11/20.
+  
+*/
+
+//Words
+"Or" = "Ou";
+"Login" = "Commencer la session";
+"Email" = "Email";
+"Password" = "mot de passe";
+"Cancel" = "Annuler";
+
+//Sessions
+"Login with Facebook" = "Se connecter avec Facebook";
+"Login with Linkedin" = "Se connecter avec Linkedin";
+"Login with Gmail" = "Se connecter avec Gmail";
+"Sign Up" = "S'inscrire";
+"Already have an account" = "Vous avez déjà et compte";

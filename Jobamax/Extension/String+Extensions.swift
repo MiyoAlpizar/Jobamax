@@ -5,6 +5,7 @@
 //  Created by Miyo Alpízar on 01/11/20.
 //
 
+import SwiftUI
 import Foundation
 
 extension String {
@@ -23,6 +24,10 @@ extension String {
     
     subscript (i: Int) -> String {
         return self[i ..< i + 1]
+    }
+    
+    func localizable() -> String {
+        return NSLocalizedString(self, comment: "")
     }
     
     func substring(fromIndex: Int) -> String {

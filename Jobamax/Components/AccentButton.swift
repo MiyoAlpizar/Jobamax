@@ -15,7 +15,7 @@ struct AccentButton: View {
     
     var body: some View {
         Button(action: action, label: {
-            Text(title)
+            Text(title.localizable().uppercased())
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .frame(height: 50)
                 .foregroundColor(.white)

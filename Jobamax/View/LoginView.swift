@@ -34,7 +34,7 @@ struct LoginView: View {
                         .frame(width: 68, height: 68, alignment: .center)
                 }
                 
-                AccentButton(title: "LOGIN") {
+                AccentButton(title: "Login") {
                     validateLogin()
                 }
                 Spacer()

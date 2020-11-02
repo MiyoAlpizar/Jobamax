@@ -21,7 +21,7 @@ struct RoundedImageButton: View {
                     .resizable()
                     .frame(width: 24, height: 24, alignment: .center)
                 Spacer()
-                Text(title)
+                Text(title.localizable().uppercased())
                     .font(.body)
                     .foregroundColor(.primaryText)
                 Spacer()
